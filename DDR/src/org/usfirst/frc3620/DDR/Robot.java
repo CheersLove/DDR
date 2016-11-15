@@ -72,9 +72,7 @@ public class Robot extends IterativeRobot {
 
     }
 
-    public void disabledPeriodic() {
-        Scheduler.getInstance().run();
-    }
+ 
 
     public void autonomousInit() {
         // schedule the autonomous command (example)

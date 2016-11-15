@@ -89,34 +89,42 @@ public class Command1 extends Command {
 
 
 if (currentMode == Subsystem1.Mode.TANK) {
- if (Robot.oi.joystick1.getRawButton(3)) {
+	//X
+ if (Robot.oi.joystick1.getRawButton(7)) {
 	 leftPower = power;
  }
- else if (Robot.oi.joystick1.getRawButton(1)) {
+ else if (Robot.oi.joystick1.getRawButton(6)) {
+	 //Triangle
 	 leftPower = -1*power;
  }
- if (Robot.oi.joystick1.getRawButton(4)) {
+ if (Robot.oi.joystick1.getRawButton(5)) {
+	 //Square
 	 rightPower = -1*power;
  }
- else if (Robot.oi.joystick1.getRawButton(2)) {
+ else if (Robot.oi.joystick1.getRawButton(8)) {
+	 //Circle
 	 rightPower = power;
  }
 }
  
 if (currentMode == Mode.ARCADE) {
- if (Robot.oi.joystick1.getRawButton(15)) {
+ if (Robot.oi.joystick1.getRawButton(2)) {
+	 //Down
 	 leftPower = -1*power; 
 	 rightPower = -1*power;
  }
- else if (Robot.oi.joystick1.getRawButton(13)) {
+ else if (Robot.oi.joystick1.getRawButton(3)) {
+	 //Up
 	 leftPower = power;
 	 rightPower = power;
  }
- if (Robot.oi.joystick1.getRawButton(14)) {
+ if (Robot.oi.joystick1.getRawButton(4)) {
+	 //Right
 	 leftPower = power;
 	 rightPower = -1*power;
  }
- else if (Robot.oi.joystick1.getRawButton(16)) {
+ else if (Robot.oi.joystick1.getRawButton(1)) {
+	 //Left
 	 leftPower = -1*power;
 	 rightPower = power;
  }

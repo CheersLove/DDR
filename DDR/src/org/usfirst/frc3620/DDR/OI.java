@@ -82,43 +82,43 @@ public class OI {
         joystick1 = new Joystick(0);
         
         //Up arrow
-        powerUpButton = new JoystickButton(joystick1, 13);
+        powerUpButton = new JoystickButton(joystick1, 3);
         powerUpButton.whenPressed(new PowerUpCommand());
         
         //X:
-        powerUpButton2 = new JoystickButton(joystick1, 3);
+        powerUpButton2 = new JoystickButton(joystick1, 7);
         powerUpButton2.whenPressed(new PowerUpCommand2());
         
         //Down arrow:
-        powerDownButton = new JoystickButton(joystick1, 15);
+        powerDownButton = new JoystickButton(joystick1, 2);
         powerDownButton.whenPressed(new PowerDownCommand());
         
         //Triangle
-        powerDownButton2 = new JoystickButton(joystick1, 1);
+        powerDownButton2 = new JoystickButton(joystick1, 6);
         powerDownButton2.whenPressed(new PowerDownCommand2());
         
         //Right arrow:
-        fireCannon = new JoystickButton(joystick1, 14);
+        fireCannon = new JoystickButton(joystick1, 4);
         fireCannon.whenPressed(new FireCommand());
         
         //O
-        fireCannon2 = new JoystickButton(joystick1, 4);
+        fireCannon2 = new JoystickButton(joystick1, 8);
         fireCannon2.whenPressed(new FireCommand2());
         
         //Left arrow
-        cannonPressurize = new JoystickButton(joystick1, 16);
+        cannonPressurize = new JoystickButton(joystick1, 1);
         cannonPressurize.whenPressed(new PressureCommand());
         
         //Square
-        cannonPressurize2 = new JoystickButton(joystick1, 2);
+        cannonPressurize2 = new JoystickButton(joystick1, 5);
         cannonPressurize2.whenPressed(new PressureCommand2());
         
         //Select
-        driveSwitchButton = new JoystickButton(joystick1, 10);
+        driveSwitchButton = new JoystickButton(joystick1, 9);
         driveSwitchButton.whenPressed(new ModeSwitchCommand());
         
         //Start
-        cannonSafety = new JoystickButton(joystick1, 9);
+        cannonSafety = new JoystickButton(joystick1, 10);
         cannonSafety.whenPressed(new SafetyCommand());
 
         
